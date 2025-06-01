@@ -1,28 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav ul li a');
+  const sections  = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('nav ul li a');
 
   function setActiveLink() {
     const scrollY = window.pageYOffset;
 
-    sections.forEach(section => {
-      const top = section.offsetTop - 120;
-      const bottom = top + section.offsetHeight;
-      const id = section.getAttribute('id');
+    sections.forEach(sec => {
+      const top  = sec.offsetTop - 120;     
+      const end  = top + sec.offsetHeight;
+      const id   = sec.getAttribute('id');
 
-      if (scrollY >= top && scrollY < bottom) {
+      if (scrollY >= top && scrollY < end) {
         navLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          if (href && href.includes(id)) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
+          link.classList.toggle('active', link.getAttribute('href').includes(id));
         });
       }
     });
   }
 
-  setActiveLink(); 
+  setActiveLink();              
   window.addEventListener('scroll', setActiveLink);
 });
