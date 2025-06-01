@@ -166,7 +166,7 @@ ul li {
     flex: 1 1 320px; }
 
 
-/* Contact form  */
+/* Contact */
 #contacts form {
   display: flex; 
   flex-direction: column; 

@@ -21,4 +21,3 @@ document.addEventListener('DOMContentLoaded', () => {
   setActiveLink();              
   window.addEventListener('scroll', setActiveLink);
 });
-
