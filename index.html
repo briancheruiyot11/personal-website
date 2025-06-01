@@ -2,30 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <!-- Links -->
-     <link rel="stylesheet" href="./css/styles.css">
-     <script src="./script/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <script src="./script/script.js" defer></script>
     <title>Brian Personal Website</title>
 </head>
 <body>
-    <!-- Header/Navigation --> 
-     <header>
-        <nav>   
-            <ul>    
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero">Brian Cheruiyot</a>
+            </div>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-     </header>    
-    <!-- Hero Section --> 
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+        <h1>Hi, I'm Brian Cheruiyot </h1>
+        <p>I’m a passionate Full Stack Software Engineer specializing in developing fast, scalable, and user-friendly web applications.</p>
+            <div class="icon-container">
+                <a href="https://github.com/briancheruiyot11" target="_blank" class="icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a  target="_blank" class="icon js">
+                    <i class="fab fa-js"></i>
+                </a>
+        
+                <a  target="_blank" class="icon html">
+                    <i class="fab fa-html5"></i>
+                </a>
+                <a  target="_blank" class="icon css">
+                    <i class="fab fa-css3-alt"></i>
+                </a>
+    
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./images/cheru.png" alt="Brian" />
+        </div>
+        
+    </section>
+
     <!-- About Section -->
+    
+        
+        <section id="aboutme">
+         <h2>About Me</h2>
+         <div id="about">
+        <div class="aboutme_image">
+            <img  src="./images/aboutme_image.jpg" alt="Brian_coding">
+        </div>
+        <div class="about_content">
+            <p><strong>I'm an aspiring Software Engineer.</strong></p> 
+        <p>Currently training at Moringa School, so far with a strong foundation in full-stack development.I  have a passion for solving real-world problems through clean, efficient code. I work with technologies such as Html, Css, JavaScript and Node.js.I thrive in collaborative, agile environments and am continually growing my skills in building secure, scalable, and user-focused solutions.</p>
+        </div>
+    </div>
+    
+    </section>
+
     <!-- Skills Section -->
-    <!-- Project Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <p>I'm an aspiring Full Stack Software Engineer with a focus on modern web development using the following technologies:</p>
+
+    <ul>
+        <li><strong>Languages & Markup:</strong> HTML, CSS, JavaScript </li>
+        <li><strong>Backend Development:</strong> Node.js </li>
+        <li><strong>Frontend Tools:</strong> Responsive Design, DOM Manipulation, Flexbox & Grid Layout</li>
+        <li><strong>Version Control:</strong> Git & GitHub</li>
+        <li><strong>Development Practices:</strong> Clean Code, Modular Design, Debugging</li>
+    </ul>
+
+    <p>I’m continuously improving my skills and staying current with industry best practices to build fast, secure, and scalable web applications.
+    </p>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Th3Tech Company</p>
+        <div id="company">
+        <div class="company_description">
+            <p>
+                The Th3tech Company website showcases the company's portfolio and core services, including web development, mobile apps, and branding. Built with Vercel, HTML, and CSS, the site delivers a clean, user-friendly experience. The project emphasized clarity, responsiveness, and strong brand representation.
+                <div class="icon-container">
+                <a href="https://github.com/the3te3ch" target="_blank" class="icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <a href="https://www.th3tech.co.ke/" target="_blank" class="icon website">
+      <i class="fas fa-globe"></i>
+    </a>
+            </div>
+            </p>
+
+        </div>
+        <div class="company_image">
+            <img src="./images/techcompany_image.png" alt="th3tech_company">
+
+        </div>
+    </div>
+    </section>
+
     <!-- Contact Section -->
-    <!-- Footer -->      
+    <section id="contacts">
+        <h2>Contacts</h2>
+        Get In Touch
+
+Feel free to reach out if you're looking for a Software Developer or have any questions. 
+I'm always open to discussing new projects and opportunities.
+            <p>Email: <a style="color: blue;" href="mailto:briancheru11@gmail.com">briancheru11@gmail.com</a></p>
+            <div class="icon-container">
+    <a href="https://www.linkedin.com/in/brian-cheruiyot-360644323/" target="_blank" class="icon linkedin">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/briancheruiyot11" target="_blank" class="icon github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/_brio11_/" target="_blank" class="icon instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://x.com/BrianCheru3" target="_blank" class="icon twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+        
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Brian Cheruiyot. All rights reserved.</p>
+    </footer>
 </body>
 </html>
